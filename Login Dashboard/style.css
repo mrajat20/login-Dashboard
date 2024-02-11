@@ -1,0 +1,143 @@
+body {
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    margin: 0;
+    height: 100vh;
+    padding: 0 32px;
+    background:rgb(215, 215, 215);
+    font-family: "poppins";
+}
+
+@media (width >= 500px) {
+    body { padding: 0; }
+
+    .card {
+        margin: 0;
+        width: 360px;
+    }
+}
+
+.background {
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 
+    47% 53% 61% 39% /
+    45% 51% 49% 55% ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,3,10,1) 25%, rgba(0,212,255,1) 100%);
+
+}
+
+.card {
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    width: 54%;
+    margin: 0 20px;
+    padding: 70px 30px 54px;
+    border-radius: 24px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 
+    0 100px 100px 
+    rgb(0 0 0 / 10%);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    translate: -50% 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #216ce7;
+}
+
+.background::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-image: radial-gradient( circle 897px at 9% 80.3%,  rgba(55,60,245,1) 0%, rgba(234,161,15,0.90) 100.2% );
+}
+
+.logo {
+    height: 100px;
+
+}
+
+.card.logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    translate: -50% 0;
+    width: 64px;
+    height: 64px;
+}
+
+.card > h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 38px;
+    color: black;
+}
+
+.form {
+    margin: 0 0 44px;
+    display: grid;
+    gap: 12px;
+}
+
+.form :is(input) {
+    width: 90%;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form :is(button) {
+    width: 96%;
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form > input {
+    border: 0;
+    padding: 0 24px;
+    color: #222222;
+    background: #ededed;
+}
+
+.form > input::placeholder {
+    color: rgb(0 0 0 / 28%);
+}
+
+.form > button {
+    border: 0;
+    color: #f9f9f9;
+    background: #226ce7;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card > footer {
+    color: black;
+}
+
+.card > footer > a {
+    color: #216;
+}
